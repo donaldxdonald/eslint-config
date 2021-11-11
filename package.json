@@ -5,7 +5,7 @@
   "scripts": {
     "publish": "lerna publish --conventional-commits"
   },
-  "author": "Donald Mok <mzhlovefama@gmail.com>",
+  "author": "donaldxdonald",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^4.0.0"
