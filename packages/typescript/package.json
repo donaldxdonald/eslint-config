@@ -1,6 +1,6 @@
 {
   "name": "@dxd/eslint-config-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The eslint rules of typescript",
   "main": "index.js",
   "scripts": {
