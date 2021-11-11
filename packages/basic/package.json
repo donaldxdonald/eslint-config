@@ -1,12 +1,12 @@
 {
   "name": "@dxd/eslint-config-basic",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "The basic javascript rules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Donald Mok <mzhlovefama@gmail.com>",
+  "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 7.4.0"
@@ -29,6 +29,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "3bd8ba8590af0fc3430d8bc62fc29c5bf056b9e3"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@dxd/eslint-config-ts",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "The eslint rules of typescript",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "3bd8ba8590af0fc3430d8bc62fc29c5bf056b9e3"
+  }
 }
