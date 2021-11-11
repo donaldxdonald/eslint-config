@@ -1,0 +1,25 @@
+{
+  "name": "@dxd/eslint-config-ts",
+  "version": "0.0.2",
+  "description": "The eslint rules of typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Donald Mok <mzhlovefama@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

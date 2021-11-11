@@ -1,0 +1,33 @@
+{
+  "name": "@dxd/eslint-config-basic",
+  "version": "0.0.2",
+  "description": "The basic javascript rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Donald Mok <mzhlovefama@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-unicorn": "^38.0.1",
+    "eslint-plugin-yml": "^0.11.0",
+    "jsonc-eslint-parser": "^2.0.2",
+    "yaml-eslint-parser": "^0.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
