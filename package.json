@@ -1,13 +1,15 @@
 {
-  "name": "@dxd/eslint-config",
-  "version": "0.0.0",
+  "name": "@dxd/eslint-config-monorepo",
+  "version": "0.0.1",
   "description": "Eslint Rules for Donald Mok",
+  "private": "true",
   "scripts": {
-    "publish": "lerna publish --conventional-commits"
+    "preinstall": "npx only-allow pnpm",
+    "publish": "pnpm publish -r --no-git-checks"
   },
-  "author": "donaldxdonald",
+  "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@changesets/cli": "^2.18.1"
   }
 }
