@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "publish": "pnpm publish -r --no-git-checks"
+    "publish": "pnpm -r publish --access=public --no-git-checks"
   },
   "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
