@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@dxd/eslint-config-basic',
-    '@dxd/eslint-config-ts',
+    '@dndxdnd/eslint-config-basic',
+    '@dndxdnd/eslint-config-ts',
   ],
 }

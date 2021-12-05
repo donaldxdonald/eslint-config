@@ -1,5 +1,5 @@
 {
-  "name": "@dxd/eslint-config-ts",
+  "name": "@dndxdnd/eslint-config-ts",
   "version": "0.0.1",
   "description": "The eslint rules of typescript",
   "main": "index.js",

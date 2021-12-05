@@ -1,5 +1,5 @@
 {
-  "name": "@dxd/eslint-config-monorepo",
+  "name": "@dndxdnd/eslint-config-monorepo",
   "version": "0.0.1",
   "description": "Eslint Rules for Donald Mok",
   "private": "true",

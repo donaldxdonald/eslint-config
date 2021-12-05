@@ -10,12 +10,12 @@ importers:
 
   packages/all:
     specifiers:
-      '@dxd/eslint-config-basic': workspace:^0.0.1
-      '@dxd/eslint-config-ts': workspace:^0.0.1
+      '@dndxdnd/eslint-config-basic': workspace:^0.0.1
+      '@dndxdnd/eslint-config-ts': workspace:^0.0.1
       eslint: ^8.2.0
     dependencies:
-      '@dxd/eslint-config-basic': link:../basic
-      '@dxd/eslint-config-ts': link:../typescript
+      '@dndxdnd/eslint-config-basic': link:../basic
+      '@dndxdnd/eslint-config-ts': link:../typescript
     devDependencies:
       eslint: 8.3.0
 
