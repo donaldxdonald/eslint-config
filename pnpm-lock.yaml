@@ -10,7 +10,7 @@ importers:
 
   packages/all:
     specifiers:
-      '@dndxdnd/eslint-config-basic': workspace:^0.0.1
+      '@dndxdnd/eslint-config-basic': workspace:^0.0.2
       '@dndxdnd/eslint-config-ts': workspace:^0.0.1
       eslint: ^8.2.0
     dependencies:

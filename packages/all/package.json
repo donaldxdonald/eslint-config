@@ -1,6 +1,6 @@
 {
   "name": "@dndxdnd/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint Config",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "eslint": "^8.2.0"
   },
   "dependencies": {
-    "@dndxdnd/eslint-config-basic": "workspace:^0.0.1",
+    "@dndxdnd/eslint-config-basic": "workspace:^0.0.2",
     "@dndxdnd/eslint-config-ts": "workspace:^0.0.1"
   },
   "publishConfig": {
