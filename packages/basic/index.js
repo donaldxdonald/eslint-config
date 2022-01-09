@@ -66,7 +66,7 @@ module.exports = {
 
 		// Common
 		'semi': ['error', 'never'],
-		'curly': ['error', 'multi-or-nest', 'consistent'],
+    "curly": ["error", "all"],
 		'quotes': ['error', 'single'],
 		'quote-props': ['error', 'consistent-as-needed'],
 		'no-unused-vars': 'warn',
@@ -80,7 +80,7 @@ module.exports = {
 		'comma-dangle': ['error', 'always-multiline'],
 		'no-constant-condition': 'warn',
 		'no-debugger': 'error',
-		'no-console': ['error', { allow: ['warn', 'error'] }],
+    "no-console":"off",
 		'no-cond-assign': ['error', 'always'],
 		'func-call-spacing': ['off', 'never'],
 		'key-spacing': ['error', { beforeColon: false, afterColon: true }],
@@ -144,6 +144,7 @@ module.exports = {
 		'require-await': 'off',
 		'no-return-assign': 'off',
 		'operator-linebreak': ['error', 'before'],
+    "no-tabs": "off",
 
     'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
     'eslint-comments/disable-enable-pair': 'off',
