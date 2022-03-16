@@ -12,10 +12,12 @@ importers:
     specifiers:
       '@dndxdnd/eslint-config-basic': workspace:^0.0.2
       '@dndxdnd/eslint-config-ts': workspace:^0.0.1
+      '@dndxdnd/eslint-config-vue': workspace:^1.0.0
       eslint: ^8.2.0
     dependencies:
       '@dndxdnd/eslint-config-basic': link:../basic
       '@dndxdnd/eslint-config-ts': link:../typescript
+      '@dndxdnd/eslint-config-vue': link:../vue
     devDependencies:
       eslint: 8.3.0
 
