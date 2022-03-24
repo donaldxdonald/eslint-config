@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     '@dndxdnd/eslint-config-basic',
     '@dndxdnd/eslint-config-ts',
-    "vue/vue3-recommended"
+    "plugin:vue/vue3-recommended"
   ],
   rules: {
     // Vue
