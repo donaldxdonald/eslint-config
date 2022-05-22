@@ -16,8 +16,7 @@
   },
   "dependencies": {
     "@dndxdnd/eslint-config-basic": "workspace:^0.0.2",
-    "@dndxdnd/eslint-config-ts": "workspace:^0.0.1",
-    "@dndxdnd/eslint-config-vue": "workspace:^1.1.0"
+    "@dndxdnd/eslint-config-ts": "workspace:^0.0.1"
   },
   "publishConfig": {
     "access": "public"
