@@ -1,6 +1,6 @@
 {
   "name": "@dndxdnd/eslint-config-basic",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "The basic javascript rules",
   "main": "index.js",
   "scripts": {
