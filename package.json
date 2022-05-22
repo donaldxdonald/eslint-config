@@ -5,7 +5,9 @@
   "private": "true",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
