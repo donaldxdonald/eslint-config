@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config-vue
 
+## 2.0.2
+
+### Patch Changes
+
+- 6d682ee: remove all the rules of config-vue
+
 ## 2.0.1
 
 ### Patch Changes
