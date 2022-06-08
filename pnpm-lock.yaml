@@ -70,9 +70,11 @@ importers:
       eslint: ^8.2.0
       eslint-plugin-vue: ^9.1.0
       typescript: ^4.6.2
+      vue-eslint-parser: ^9.0.2
     dependencies:
       '@dndxdnd/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 9.1.0_eslint@8.3.0
+      vue-eslint-parser: 9.0.2_eslint@8.3.0
     devDependencies:
       eslint: 8.3.0
       typescript: 4.6.2
