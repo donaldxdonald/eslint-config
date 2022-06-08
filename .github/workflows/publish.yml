@@ -15,7 +15,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.20.4
+          version: 7.1.9
 
       - name: Setup Node.js ${{ secrets.NODE_VERSION }}
         uses: actions/setup-node@v2
