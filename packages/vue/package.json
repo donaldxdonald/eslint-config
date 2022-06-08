@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@dndxdnd/eslint-config-ts": "workspace:1.0.0",
-    "eslint-plugin-vue": "^9.1.0"
+    "eslint-plugin-vue": "^9.1.0",
+    "vue-eslint-parser": "^9.0.2"
   }
 }
