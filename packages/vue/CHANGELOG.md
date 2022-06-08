@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config-vue
 
+## 2.0.1
+
+### Patch Changes
+
+- update rules for \*.vue file
+
 ## 2.0.0
 
 ### Major Changes
