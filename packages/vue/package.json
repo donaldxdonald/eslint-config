@@ -1,6 +1,6 @@
 {
   "name": "@dndxdnd/eslint-config-vue",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The eslint rules of vue 3",
   "main": "index.js",
   "scripts": {
