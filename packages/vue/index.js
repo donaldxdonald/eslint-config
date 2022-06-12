@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'plugin:vue/vue3-recommended',
     '@dndxdnd/eslint-config-ts',
   ],
   overrides: [
@@ -16,4 +17,7 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    'vue/multi-word-component-names': 'off',
+  },
 }

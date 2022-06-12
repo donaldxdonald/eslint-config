@@ -1,6 +1,6 @@
 {
   "name": "@dndxdnd/eslint-config-vue",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "The eslint rules of vue 3",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "@dndxdnd/eslint-config-ts": "workspace:1.0.1",
+    "@dndxdnd/eslint-config-ts": "workspace:1.0.2",
     "eslint-plugin-vue": "^9.1.0",
     "vue-eslint-parser": "^9.0.2"
   }

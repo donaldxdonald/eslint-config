@@ -119,7 +119,6 @@ module.exports = {
       ignoreComments: true,
       ignoreRegExpLiterals: true,
     }],
-    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-return-await': 'error',
     'no-constant-condition': ['error', { checkLoops: false }],
     'no-bitwise': 'off',
@@ -167,8 +166,8 @@ module.exports = {
     "@typescript-eslint/no-empty-interface": [
       "warn",
       {
-        "allowSingleExtends": true
-      }
-    ]
+        allowSingleExtends: true,
+      },
+    ],
   },
 }
