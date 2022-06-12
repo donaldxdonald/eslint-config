@@ -1,5 +1,13 @@
 # @dndxdnd/eslint-config-vue
 
+## 2.0.4
+
+### Patch Changes
+
+- update deps
+- Updated dependencies
+  - @dndxdnd/eslint-config-ts@1.0.2
+
 ## 2.0.3
 
 ### Patch Changes

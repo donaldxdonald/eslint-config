@@ -16,8 +16,8 @@ importers:
 
   packages/all:
     specifiers:
-      '@dndxdnd/eslint-config-ts': workspace:^1.0.0
-      '@dndxdnd/eslint-config-vue': workspace:^2.0.0
+      '@dndxdnd/eslint-config-ts': workspace:^1.0.1
+      '@dndxdnd/eslint-config-vue': workspace:^2.0.3
       eslint: ^8.2.0
     dependencies:
       '@dndxdnd/eslint-config-ts': link:../typescript
@@ -62,7 +62,7 @@ importers:
 
   packages/vue:
     specifiers:
-      '@dndxdnd/eslint-config-ts': workspace:1.0.0
+      '@dndxdnd/eslint-config-ts': workspace:1.0.1
       eslint: ^8.2.0
       eslint-plugin-vue: ^9.1.0
       typescript: ^4.6.2
