@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config-ts
 
+## 1.0.1
+
+### Patch Changes
+
+- update rules
+
 ## 1.0.0
 
 ### Major Changes

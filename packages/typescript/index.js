@@ -9,7 +9,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
-    'plugin:yml/standard',
     'plugin:markdown/recommended',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -37,13 +36,6 @@ module.exports = {
         'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
         'jsonc/object-curly-spacing': ['error', 'always'],
         'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
-      },
-    },
-    {
-      files: ['*.yaml', '*.yml'],
-      parser: 'yaml-eslint-parser',
-      rules: {
-        'spaced-comment': 'off',
       },
     },
     {
@@ -85,6 +77,8 @@ module.exports = {
         classPropertiesAllowed: false,
       },
     ],
+    "import/order": 0,
+    "no-plusplus": 0,
 
     'prefer-const': 'error',
     // 强制在关键字前后使用一致的空格 (前后腰需要)
@@ -170,5 +164,11 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-unused-vars': ['warn', { vars: 'all', args: 'none', ignoreRestSiblings: false }],
     '@typescript-eslint/type-annotation-spacing': ['error', { before: false, after: true, overrides: { arrow: { before: true, after: true } } }],
+    "@typescript-eslint/no-empty-interface": [
+      "warn",
+      {
+        "allowSingleExtends": true
+      }
+    ]
   },
 }
