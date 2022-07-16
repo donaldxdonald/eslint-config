@@ -65,7 +65,7 @@ module.exports = {
   ],
   rules: {
     // JS
-    indent: ['error', 2],
+    indent: 'off',
     'guard-for-in': 'off',
     'no-underscore-dangle': 'off',
     'no-shadow': 'off',
@@ -169,5 +169,6 @@ module.exports = {
         allowSingleExtends: true,
       },
     ],
+    "@typescript-eslint/indent": ['error', 2],
   },
 }

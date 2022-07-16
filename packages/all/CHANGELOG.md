@@ -1,5 +1,14 @@
 # @dndxdnd/eslint-config
 
+## 1.0.2
+
+### Patch Changes
+
+- fix indent rule
+- Updated dependencies
+  - @dndxdnd/eslint-config-ts@1.0.3
+  - @dndxdnd/eslint-config-vue@2.0.5
+
 ## 1.0.1
 
 ### Patch Changes
