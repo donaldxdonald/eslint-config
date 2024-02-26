@@ -89,7 +89,7 @@ importers:
   packages/vue:
     dependencies:
       '@dndxdnd/eslint-config-ts':
-        specifier: workspace:1.0.3
+        specifier: workspace:2.0.0
         version: link:../typescript
       eslint-plugin-vue:
         specifier: ^9.1.0
