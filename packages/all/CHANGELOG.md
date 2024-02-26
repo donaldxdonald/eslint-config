@@ -1,5 +1,13 @@
 # @dndxdnd/eslint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- Updated dependencies [5035321]
+  - @dndxdnd/eslint-config-ts@2.0.0
+  - @dndxdnd/eslint-config-vue@2.0.6
+
 ## 1.0.2
 
 ### Patch Changes
