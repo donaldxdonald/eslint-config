@@ -12,7 +12,7 @@
   "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.18.1",
+    "@changesets/cli": "^2.27.1",
     "@dndxdnd/eslint-config": "workspace:*",
     "eslint": "^8.2.0",
     "typescript": "^4.6.2"
