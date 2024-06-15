@@ -1,6 +1,7 @@
 import { Linter } from "eslint"
 import { GLOB_VUE } from "../globs"
-import { parserVue, pluginVue, tsEslint } from "../plugins"
+import { tsEslint } from "../plugins"
+import { ensurePackages, interopDefault } from "../utils"
 import { tsCore } from "./typescript"
 
 const vueCustomRules: Linter.RulesRecord = {
@@ -44,14 +45,32 @@ const vueCustomRules: Linter.RulesRecord = {
   'vue/require-prop-types': 'off',
 }
 
-const vue3Rules: Linter.RulesRecord = {
-  ...pluginVue.configs.base.rules,
-  ...pluginVue.configs['vue3-essential'].rules,
-  ...pluginVue.configs['vue3-strongly-recommended'].rules,
-  ...pluginVue.configs['vue3-recommended'].rules,
-}
 
-export const vue = (): Linter.FlatConfig[] => {
+export const vue = async(): Promise<Linter.FlatConfig[]> => {
+
+
+  await ensurePackages([
+    'eslint-plugin-vue',
+    'vue-eslint-parser',
+  ])
+
+  const [
+    pluginVue,
+    parserVue,
+  ] = await Promise.all([
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    interopDefault(import('eslint-plugin-vue')),
+    interopDefault(import('vue-eslint-parser')),
+  ])
+
+  const vue3Rules: Linter.RulesRecord = {
+    ...pluginVue.configs.base.rules,
+    ...pluginVue.configs['vue3-essential'].rules,
+    ...pluginVue.configs['vue3-strongly-recommended'].rules,
+    ...pluginVue.configs['vue3-recommended'].rules,
+  }
+
   return [
     ...tsEslint.config({
       extends: tsCore(),

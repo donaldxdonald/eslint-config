@@ -71,7 +71,7 @@ export const javascript = (): Linter.FlatConfig[] => [
       'brace-style': ['error', '1tbs', { allowSingleLine: false }],
       'space-in-parens': ['error', 'never'],
       'switch-colon-spacing': ['error'],
-      'unused-imports/no-unused-imports': 'off',
+      'unused-imports/no-unused-imports': ['error'],
       'unused-imports/no-unused-vars': [
         'error',
         { args: 'after-used', ignoreRestSiblings: true },

@@ -15,15 +15,39 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "default": "./dist/index.js"
+      "default": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "eslint": ">=8.40.0"
+    "@eslint-react/eslint-plugin": "^1.5.8",
+    "eslint": ">=8.40.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "eslint-plugin-vue": "^9.26.0",
+    "vue-eslint-parser": "^9.4.3"
+  },
+  "peerDependenciesMeta": {
+    "@eslint-react/eslint-plugin": {
+      "optional": true
+    },
+    "eslint-plugin-vue": {
+      "optional": true
+    },
+    "vue-eslint-parser": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-react-refresh": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/eslint": "8.56.10",
+    "@types/node": "20",
     "eslint": "^8.57.0",
     "typescript": "^5.4.5"
   },
@@ -31,6 +55,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@antfu/install-pkg": "^0.3.3",
+    "@clack/prompts": "^0.7.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import-x": "^0.5.1",
     "eslint-plugin-jsdoc": "^48.2.12",
@@ -40,13 +66,11 @@
     "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-unicorn": "^54.0.0",
     "eslint-plugin-unused-imports": "^3.2.0",
-    "eslint-plugin-vue": "^9.26.0",
     "eslint-plugin-yml": "^1.14.0",
     "globals": "^15.4.0",
     "jsonc-eslint-parser": "^2.4.0",
     "local-pkg": "^0.5.0",
     "typescript-eslint": "^7.13.0",
-    "vue-eslint-parser": "^9.4.3",
     "yaml-eslint-parser": "^1.2.3"
   }
 }

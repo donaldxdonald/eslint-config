@@ -4,7 +4,6 @@ import { tsEslint } from "../plugins"
 
 export const tsCore = () => {
 
-
   return tsEslint.config({
     extends: [...tsEslint.configs.recommended],
     files: [GLOB_TS, GLOB_TSX],
