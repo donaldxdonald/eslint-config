@@ -9,7 +9,8 @@
     "build": "pnpm run -r --filter=./packages/* build",
     "changeset": "changeset",
     "version": "changeset version",
-    "publish": "changeset publish"
+    "publish": "changeset publish",
+    "release": "pnpm run build && pnpm run publish"
   },
   "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
