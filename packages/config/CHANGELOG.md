@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.1.0
+
+### Minor Changes
+
+- e6698b3: add react option
+
 ## 2.0.0
 
 ### Major Changes
