@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.2.0
+
+### Minor Changes
+
+- fa6ac70: add stylistic rules
+
 ## 2.1.0
 
 ### Minor Changes
