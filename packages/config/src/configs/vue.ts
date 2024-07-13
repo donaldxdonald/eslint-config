@@ -45,10 +45,7 @@ const vueCustomRules: Linter.RulesRecord = {
   'vue/require-prop-types': 'off',
 }
 
-
 export const vue = async(): Promise<Linter.FlatConfig[]> => {
-
-
   await ensurePackages([
     'eslint-plugin-vue',
     'vue-eslint-parser',
@@ -84,14 +81,14 @@ export const vue = async(): Promise<Linter.FlatConfig[]> => {
           sourceType: 'module',
           ecmaFeatures: {
             jsx: true,
-          }, 
+          },
           extraFileExtensions: ['.vue'],
           parser: '@typescript-eslint/parser',
         },
       },
       plugins: {
         '@typescript-eslint': tsEslint.plugin as any,
-        vue: pluginVue,
+        "vue": pluginVue,
       },
       processor: pluginVue.processors['.vue'],
       rules: {

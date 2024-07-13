@@ -9,4 +9,5 @@ export type Options = {
   markdown?: boolean
   typescript?: boolean
   react?: boolean | OptionsWithOverrides
+  style?: boolean
 }

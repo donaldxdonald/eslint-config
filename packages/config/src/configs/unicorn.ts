@@ -5,7 +5,7 @@ export const unicorn = (): Linter.FlatConfig[] => {
   return [
     {
       plugins: {
-        'unicorn': pluginUnicorn,
+        unicorn: pluginUnicorn,
       },
     },
   ]

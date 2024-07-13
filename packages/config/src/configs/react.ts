@@ -8,18 +8,16 @@ const NextJsPackages = ['next']
 const ReactRefreshAllowConstantExportPackages = ['vite']
 
 export const react = async(options?: OptionsWithOverrides): Promise<Linter.FlatConfig[]> => {
-  
   const {
     overrides = {},
   } = options || {}
 
-  
   await ensurePackages([
     '@eslint-react/eslint-plugin',
     'eslint-plugin-react-hooks',
     'eslint-plugin-react-refresh',
   ])
-  
+
   const [
     pluginReact,
     pluginReactHooks,
@@ -34,7 +32,6 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.FlatC
     interopDefault(import('typescript-eslint')),
   ] as const)
 
-  
   const isAllowConstantExport = ReactRefreshAllowConstantExportPackages.some(i => isPackageExists(i))
   const isUsingNext = NextJsPackages.some(i => isPackageExists(i))
 
@@ -64,7 +61,7 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.FlatC
         },
       },
       rules: {
-        
+
         // recommended rules from @eslint-react/dom
         'react-dom/no-children-in-void-dom-elements': 'warn',
         'react-dom/no-dangerously-set-innerhtml': 'warn',

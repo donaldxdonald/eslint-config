@@ -11,7 +11,7 @@ export const yml = (): Linter.FlatConfig[] => {
         parser: parserYaml,
       },
       plugins: {
-        'yml': pluginYml as any,
+        yml: pluginYml as any,
       },
       rules: {
         'yml/no-empty-mapping-value': 'off',

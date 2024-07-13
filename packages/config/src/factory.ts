@@ -1,6 +1,6 @@
 import { Linter } from "eslint"
 import { isPackageExists } from "local-pkg"
-import { comments, ignores, imports, javascript, jsonc, markdown, node, react, regexp, typescript, unicorn, vue, yml } from "./configs"
+import { comments, ignores, imports, javascript, jsonc, markdown, node, react, regexp, style, typescript, unicorn, vue, yml } from "./configs"
 import { Options } from "./types/options"
 
 export const presetBasic = [
@@ -21,6 +21,7 @@ export const dndxdnd = async(extraConfigs: Linter.FlatConfig[] = [], options?: O
     markdown: enableMarkdown,
     typescript: enableTypescript = true,
     react: enableReact = isPackageExists('react'),
+    style: enableStyle = true,
   } = options || {}
 
   const configs: Linter.FlatConfig[] = []
@@ -42,6 +43,10 @@ export const dndxdnd = async(extraConfigs: Linter.FlatConfig[] = [], options?: O
 
   if (enableMarkdown) {
     configs.push(...markdown())
+  }
+
+  if (enableStyle) {
+    configs.push(...style())
   }
 
   configs.push(...extraConfigs)

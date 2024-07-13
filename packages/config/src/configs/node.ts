@@ -5,7 +5,7 @@ export const node = (): Linter.FlatConfig[] => {
   return [
     {
       plugins: {
-        'node': pluginNode,
+        node: pluginNode,
       },
       rules: {
         'node/handle-callback-err': ['error', '^(err|error)$'],
