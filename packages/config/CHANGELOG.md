@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.2.1
+
+### Patch Changes
+
+- 166ee60: remove `block-spacing` rule
+
 ## 2.2.0
 
 ### Minor Changes
