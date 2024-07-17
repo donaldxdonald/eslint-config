@@ -6,6 +6,7 @@ export const yml = (): Linter.FlatConfig[] => {
   return [
     ...pluginYml.configs["flat/recommended"],
     {
+      name: 'dndxdnd/yml',
       files: [GLOB_YAML],
       languageOptions: {
         parser: parserYaml,

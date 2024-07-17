@@ -4,6 +4,7 @@ import { pluginUnusedImports } from "../plugins"
 
 export const javascript = (): Linter.FlatConfig[] => [
   {
+    name: 'dndxdnd/javascript',
     languageOptions: {
       globals: {
         ...globals.browser,

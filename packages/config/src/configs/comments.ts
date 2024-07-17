@@ -3,6 +3,7 @@ import type { Linter } from 'eslint'
 
 export const comments = (): Linter.FlatConfig[] => [
   {
+    name: 'dndxdnd/comments',
     plugins: {
       'eslint-comments': pluginComments,
     },

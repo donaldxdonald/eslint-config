@@ -50,6 +50,7 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.FlatC
       },
     },
     {
+      name: 'dndxdnd/react',
       files: [GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX],
       languageOptions: {
         parser: pluginTs.parser as any,

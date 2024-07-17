@@ -4,7 +4,8 @@
   "description": "Eslint Config",
   "type": "module",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "watch": "tsup --watch"
   },
   "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",

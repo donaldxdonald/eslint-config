@@ -74,6 +74,7 @@ export const vue = async(): Promise<Linter.FlatConfig[]> => {
       files: [GLOB_VUE],
     }) as Linter.FlatConfig[],
     {
+      name: 'dndxdnd/vue',
       files: [GLOB_VUE],
       languageOptions: {
         parser: parserVue,

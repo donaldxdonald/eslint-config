@@ -4,6 +4,7 @@ import { pluginNode } from "../plugins"
 export const node = (): Linter.FlatConfig[] => {
   return [
     {
+      name: 'dndxdnd/node',
       plugins: {
         node: pluginNode,
       },

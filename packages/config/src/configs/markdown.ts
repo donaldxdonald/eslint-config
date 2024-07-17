@@ -6,6 +6,7 @@ export const markdown = (): Linter.FlatConfig[] => {
   return [
     ...pluginMarkdown.configs.recommended,
     {
+      name: 'dndxdnd/markdown',
       files: [GLOB_MARKDOWN],
       rules: {
         '@typescript-eslint/no-redeclare': 'off',

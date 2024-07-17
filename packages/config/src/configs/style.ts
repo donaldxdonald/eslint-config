@@ -5,6 +5,7 @@ export const style = (): Linter.FlatConfig[] => {
   return [
     pluginStylistic.configs["recommended-flat"],
     {
+      name: 'dndxdnd/style',
       plugins: {
         "@stylistic": pluginStylistic,
       },
@@ -16,7 +17,6 @@ export const style = (): Linter.FlatConfig[] => {
         "@stylistic/no-extra-semi": "error",
         "@stylistic/array-bracket-spacing": ["error", "never"],
         "@stylistic/arrow-parens": ["error", "as-needed"],
-        '@stylistic/block-spacing': ['error', 'never'],
         '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: false }],
         '@stylistic/comma-dangle': ['error', 'always-multiline'],
         '@stylistic/comma-spacing': ['error', {
@@ -38,7 +38,7 @@ export const style = (): Linter.FlatConfig[] => {
           ignoreRegExpLiterals: true,
         }],
         '@stylistic/object-curly-spacing': ['error', 'always'],
-        '@stylistic/quotes': "off",
+        '@stylistic/quotes': ["error", 'single'],
         '@stylistic/space-before-function-paren': ['error', 'never'],
         '@stylistic/space-in-parens': ['error', 'never'],
         '@stylistic/space-infix-ops': ['error', { int32Hint: false }],
