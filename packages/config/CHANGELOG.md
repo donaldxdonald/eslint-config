@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.3.0
+
+### Minor Changes
+
+- fb1a5f3: Update deps & add Angular config
+
 ## 2.2.1
 
 ### Patch Changes
