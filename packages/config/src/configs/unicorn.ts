@@ -1,5 +1,5 @@
-import { Linter } from "eslint"
-import { pluginUnicorn } from "../plugins"
+import { Linter } from 'eslint'
+import { pluginUnicorn } from '../plugins'
 
 export const unicorn = (): Linter.FlatConfig[] => {
   return [

@@ -1,6 +1,6 @@
-import { Linter } from "eslint"
-import { GLOB_MARKDOWN } from "../globs"
-import { pluginMarkdown } from "../plugins"
+import { Linter } from 'eslint'
+import { GLOB_MARKDOWN } from '../globs'
+import { pluginMarkdown } from '../plugins'
 
 export const markdown = (): Linter.FlatConfig[] => {
   return [

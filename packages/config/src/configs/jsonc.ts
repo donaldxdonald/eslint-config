@@ -1,10 +1,10 @@
-import { Linter } from "eslint"
-import { GLOB_JSON, GLOB_JSON5, GLOB_JSONC } from "../globs"
-import { parserJsonc, pluginJsonc } from "../plugins"
+import { Linter } from 'eslint'
+import { GLOB_JSON, GLOB_JSON5, GLOB_JSONC } from '../globs'
+import { parserJsonc, pluginJsonc } from '../plugins'
 
 export const jsonc = (): Linter.FlatConfig[] => {
   return [
-    ...pluginJsonc.configs["flat/recommended-with-jsonc"],
+    ...pluginJsonc.configs['flat/recommended-with-jsonc'],
     {
       name: 'dndxdnd/jsonc',
       files: [GLOB_JSON, GLOB_JSON5, GLOB_JSONC],

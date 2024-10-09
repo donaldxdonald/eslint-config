@@ -1,5 +1,5 @@
-import { Linter } from "eslint"
-import { pluginNode } from "../plugins"
+import { Linter } from 'eslint'
+import { pluginNode } from '../plugins'
 
 export const node = (): Linter.FlatConfig[] => {
   return [

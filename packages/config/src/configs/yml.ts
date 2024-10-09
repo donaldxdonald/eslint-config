@@ -1,10 +1,10 @@
-import { Linter } from "eslint"
-import { GLOB_YAML } from "../globs"
-import { parserYaml, pluginYml } from "../plugins"
+import { Linter } from 'eslint'
+import { GLOB_YAML } from '../globs'
+import { parserYaml, pluginYml } from '../plugins'
 
 export const yml = (): Linter.FlatConfig[] => {
   return [
-    ...pluginYml.configs["flat/recommended"],
+    ...pluginYml.configs['flat/recommended'],
     {
       name: 'dndxdnd/yml',
       files: [GLOB_YAML],

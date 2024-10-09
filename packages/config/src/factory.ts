@@ -1,7 +1,7 @@
-import { Linter } from "eslint"
-import { isPackageExists } from "local-pkg"
-import { comments, ignores, imports, javascript, jsonc, markdown, node, react, regexp, style, typescript, unicorn, vue, yml } from "./configs"
-import { Options } from "./types/options"
+import { Linter } from 'eslint'
+import { isPackageExists } from 'local-pkg'
+import { comments, ignores, imports, javascript, jsonc, markdown, node, react, regexp, style, typescript, unicorn, vue, yml } from './configs'
+import { Options } from './types/options'
 
 export const presetBasic = [
   ...javascript(),

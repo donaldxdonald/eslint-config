@@ -1,6 +1,6 @@
-import { Linter } from "eslint"
-import globals from "globals"
-import { pluginUnusedImports } from "../plugins"
+import { Linter } from 'eslint'
+import globals from 'globals'
+import { pluginUnusedImports } from '../plugins'
 
 export const javascript = (): Linter.FlatConfig[] => [
   {
@@ -33,12 +33,11 @@ export const javascript = (): Linter.FlatConfig[] => [
           classPropertiesAllowed: false,
         },
       ],
-      "import/order": 0,
-      "no-plusplus": 0,
+      'import/order': 0,
+      'no-plusplus': 0,
 
       'prefer-const': 'error',
       'no-unused-vars': 'off',
-      'no-return-await': 'error',
       'no-constant-condition': ['error', { checkLoops: false }],
       'no-bitwise': 'off',
       'unused-imports/no-unused-imports': ['error'],

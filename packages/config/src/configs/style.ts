@@ -1,22 +1,23 @@
-import { Linter } from "eslint"
+import { Linter } from 'eslint'
 import pluginStylistic from '@stylistic/eslint-plugin'
 
 export const style = (): Linter.FlatConfig[] => {
   return [
-    pluginStylistic.configs["recommended-flat"],
+    // eslint-disable-next-line import-x/no-named-as-default-member
+    pluginStylistic.configs['recommended-flat'] as Linter.FlatConfig,
     {
       name: 'dndxdnd/style',
       plugins: {
-        "@stylistic": pluginStylistic,
+        '@stylistic': pluginStylistic,
       },
       rules: {
-        "@stylistic/semi": [
-          "error",
-          "never",
+        '@stylistic/semi': [
+          'error',
+          'never',
         ],
-        "@stylistic/no-extra-semi": "error",
-        "@stylistic/array-bracket-spacing": ["error", "never"],
-        "@stylistic/arrow-parens": ["error", "as-needed"],
+        '@stylistic/no-extra-semi': 'error',
+        '@stylistic/array-bracket-spacing': ['error', 'never'],
+        '@stylistic/arrow-parens': ['error', 'as-needed'],
         '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: false }],
         '@stylistic/comma-dangle': ['error', 'always-multiline'],
         '@stylistic/comma-spacing': ['error', {
@@ -24,7 +25,7 @@ export const style = (): Linter.FlatConfig[] => {
           after: true,
         }],
         '@stylistic/func-call-spacing': 'error',
-        "@stylistic/indent": ['error', 2],
+        '@stylistic/indent': ['error', 2],
         '@stylistic/key-spacing': ['error', {
           beforeColon: false,
           afterColon: true,
@@ -38,11 +39,11 @@ export const style = (): Linter.FlatConfig[] => {
           ignoreRegExpLiterals: true,
         }],
         '@stylistic/object-curly-spacing': ['error', 'always'],
-        '@stylistic/quotes': ["error", 'single'],
+        '@stylistic/quotes': ['error', 'single'],
         '@stylistic/space-before-function-paren': ['error', 'never'],
         '@stylistic/space-in-parens': ['error', 'never'],
         '@stylistic/space-infix-ops': ['error', { int32Hint: false }],
-        '@stylistic/switch-colon-spacing': "error",
+        '@stylistic/switch-colon-spacing': 'error',
         '@stylistic/member-delimiter-style': [
           'error',
           {

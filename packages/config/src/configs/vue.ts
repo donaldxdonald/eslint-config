@@ -1,8 +1,8 @@
-import { Linter } from "eslint"
-import { GLOB_VUE } from "../globs"
-import { tsEslint } from "../plugins"
-import { ensurePackages, interopDefault } from "../utils"
-import { tsCore } from "./typescript"
+import { Linter } from 'eslint'
+import { GLOB_VUE } from '../globs'
+import { tsEslint } from '../plugins'
+import { ensurePackages, interopDefault } from '../utils'
+import { tsCore } from './typescript'
 
 const vueCustomRules: Linter.RulesRecord = {
   'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
@@ -89,7 +89,7 @@ export const vue = async(): Promise<Linter.FlatConfig[]> => {
       },
       plugins: {
         '@typescript-eslint': tsEslint.plugin as any,
-        "vue": pluginVue,
+        'vue': pluginVue,
       },
       processor: pluginVue.processors['.vue'],
       rules: {

@@ -1,8 +1,8 @@
-import { Linter } from "eslint"
-import { isPackageExists } from "local-pkg"
-import { ensurePackages, interopDefault } from "../utils"
-import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from "../globs"
-import { OptionsWithOverrides } from "../types/options"
+import { Linter } from 'eslint'
+import { isPackageExists } from 'local-pkg'
+import { ensurePackages, interopDefault } from '../utils'
+import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from '../globs'
+import { OptionsWithOverrides } from '../types/options'
 
 const NextJsPackages = ['next']
 const ReactRefreshAllowConstantExportPackages = ['vite']
@@ -41,7 +41,7 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.FlatC
     {
       name: 'dndxdnd/react/setup',
       plugins: {
-        'react': plugins["@eslint-react"] as any,
+        'react': plugins['@eslint-react'] as any,
         'react-dom': plugins['@eslint-react/dom'] as any,
         'react-hooks': pluginReactHooks,
         'react-hooks-extra': plugins['@eslint-react/hooks-extra'] as any,

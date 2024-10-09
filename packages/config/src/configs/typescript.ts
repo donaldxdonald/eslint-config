@@ -11,20 +11,13 @@ export const tsCore = () => {
       parser: tsEslint.parser,
       parserOptions: {
         sourceType: 'module',
+        project: true,
+        projectService: true
       },
     },
     rules: {
       '@typescript-eslint/no-shadow': 'warn',
       '@typescript-eslint/member-ordering': 'off',
-      '@typescript-eslint/ban-types': [
-        'error',
-        {
-          extendDefaults: true,
-          types: {
-            '{}': false,
-          },
-        },
-      ],
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/prefer-for-of': 'off',

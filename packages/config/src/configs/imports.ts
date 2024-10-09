@@ -1,10 +1,11 @@
-import { Linter } from "eslint"
-import { GLOB_MARKDOWN, GLOB_SRC, GLOB_SRC_EXT } from "../globs"
-import { pluginImport } from "../plugins"
+import { Linter } from 'eslint'
+import { GLOB_MARKDOWN, GLOB_SRC, GLOB_SRC_EXT } from '../globs'
+import { pluginImport } from '../plugins'
 
 export const imports = (): Linter.FlatConfig[] => {
   return [
-    pluginImport.configs.typescript,
+    pluginImport.flatConfigs.recommended as Linter.FlatConfig,
+    pluginImport.flatConfigs.typescript,
     {
       name: 'dndxdnd/import',
       plugins: {
@@ -41,7 +42,7 @@ export const imports = (): Linter.FlatConfig[] => {
       files: [
         `**/*config*.${GLOB_SRC_EXT}`,
         `**/{views,pages,routes,middleware,plugins,api}/${GLOB_SRC}`,
-        `**/{index,vite,esbuild,rollup,rolldown,webpack,rspack}.ts`,
+        '**/{index,vite,esbuild,rollup,rolldown,webpack,rspack}.ts',
         '**/*.d.ts',
         `${GLOB_MARKDOWN}/**`,
         '**/.prettierrc*',
