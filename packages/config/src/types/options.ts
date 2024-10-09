@@ -1,4 +1,4 @@
-import { Linter } from "eslint"
+import { Linter } from 'eslint'
 
 export type OptionsWithOverrides = {
   overrides?: Linter.FlatConfig['rules']
@@ -10,4 +10,5 @@ export type Options = {
   typescript?: boolean
   react?: boolean | OptionsWithOverrides
   style?: boolean
+  angular?: boolean
 }
