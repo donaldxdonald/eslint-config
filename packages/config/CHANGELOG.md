@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.3.1
+
+### Patch Changes
+
+- b3d8a77: remove import-x recommended config
+
 ## 2.3.0
 
 ### Minor Changes
