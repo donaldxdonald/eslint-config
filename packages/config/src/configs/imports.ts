@@ -4,7 +4,6 @@ import { pluginImport } from '../plugins'
 
 export const imports = (): Linter.FlatConfig[] => {
   return [
-    pluginImport.flatConfigs.recommended as Linter.FlatConfig,
     pluginImport.flatConfigs.typescript,
     {
       name: 'dndxdnd/import',
