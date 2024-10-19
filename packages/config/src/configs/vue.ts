@@ -55,24 +55,16 @@ export const vue = async(): Promise<Linter.FlatConfig[]> => {
     pluginVue,
     parserVue,
   ] = await Promise.all([
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
     interopDefault(import('eslint-plugin-vue')),
     interopDefault(import('vue-eslint-parser')),
   ])
-
-  const vue3Rules: Linter.RulesRecord = {
-    ...pluginVue.configs.base.rules,
-    ...pluginVue.configs['vue3-essential'].rules,
-    ...pluginVue.configs['vue3-strongly-recommended'].rules,
-    ...pluginVue.configs['vue3-recommended'].rules,
-  }
 
   return [
     ...tsEslint.config({
       extends: tsCore(),
       files: [GLOB_VUE],
     }) as Linter.FlatConfig[],
+    ...pluginVue.configs['flat/recommended'],
     {
       name: 'dndxdnd/vue',
       files: [GLOB_VUE],
@@ -93,7 +85,6 @@ export const vue = async(): Promise<Linter.FlatConfig[]> => {
       },
       processor: pluginVue.processors['.vue'],
       rules: {
-        ...vue3Rules,
         ...vueCustomRules,
       },
     },
