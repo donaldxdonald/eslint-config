@@ -45,7 +45,7 @@ const vueCustomRules: Linter.RulesRecord = {
   'vue/require-prop-types': 'off',
 }
 
-export const vue = async(): Promise<Linter.FlatConfig[]> => {
+export const vue = async(): Promise<Linter.Config[]> => {
   await ensurePackages([
     'eslint-plugin-vue',
     'vue-eslint-parser',
@@ -63,7 +63,7 @@ export const vue = async(): Promise<Linter.FlatConfig[]> => {
     ...tsEslint.config({
       extends: tsCore(),
       files: [GLOB_VUE],
-    }) as Linter.FlatConfig[],
+    }) as Linter.Config[],
     ...pluginVue.configs['flat/recommended'],
     {
       name: 'dndxdnd/vue',

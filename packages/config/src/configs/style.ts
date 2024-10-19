@@ -1,10 +1,10 @@
 import { Linter } from 'eslint'
 import pluginStylistic from '@stylistic/eslint-plugin'
 
-export const style = (): Linter.FlatConfig[] => {
+export const style = (): Linter.Config[] => {
   return [
     // eslint-disable-next-line import-x/no-named-as-default-member
-    pluginStylistic.configs['recommended-flat'] as Linter.FlatConfig,
+    pluginStylistic.configs['recommended-flat'] as Linter.Config,
     {
       name: 'dndxdnd/style',
       plugins: {

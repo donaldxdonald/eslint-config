@@ -1,7 +1,7 @@
 import { Linter } from 'eslint'
 import { pluginUnicorn } from '../plugins'
 
-export const unicorn = (): Linter.FlatConfig[] => {
+export const unicorn = (): Linter.Config[] => {
   return [
     {
       name: 'dndxdnd/unicorn',

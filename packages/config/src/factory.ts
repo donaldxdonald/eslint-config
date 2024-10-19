@@ -16,7 +16,7 @@ export const presetBasic = [
   ...regexp(),
 ]
 
-export const dndxdnd = async(extraConfigs: Linter.FlatConfig[] = [], options?: Options): Promise<Linter.FlatConfig[]> => {
+export const dndxdnd = async(extraConfigs: Linter.Config[] = [], options?: Options): Promise<Linter.Config[]> => {
   const {
     vue: enableVue = isPackageExists('vue'),
     markdown: enableMarkdown,
@@ -26,7 +26,7 @@ export const dndxdnd = async(extraConfigs: Linter.FlatConfig[] = [], options?: O
     angular: enableAngular = false,
   } = options || {}
 
-  const configs: Linter.FlatConfig[] = []
+  const configs: Linter.Config[] = []
 
   configs.push(...presetBasic)
 

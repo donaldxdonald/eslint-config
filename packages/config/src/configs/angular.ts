@@ -3,7 +3,7 @@ import { tsEslint } from '../plugins'
 import { interopDefault } from '../utils'
 import { GLOB_HTML, GLOB_TS } from '../globs'
 
-export const angular = async(): Promise<Linter.FlatConfig[]> => {
+export const angular = async(): Promise<Linter.Config[]> => {
   const [
     angularEslint,
   ] = await Promise.all([
@@ -44,5 +44,5 @@ export const angular = async(): Promise<Linter.FlatConfig[]> => {
         ...angularEslint.configs.templateRecommended,
       ],
     },
-  ) as Linter.FlatConfig[]
+  ) as Linter.Config[]
 }

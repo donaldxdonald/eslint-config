@@ -2,7 +2,7 @@ import { Linter } from 'eslint'
 import globals from 'globals'
 import { pluginUnusedImports } from '../plugins'
 
-export const javascript = (): Linter.FlatConfig[] => [
+export const javascript = (): Linter.Config[] => [
   {
     name: 'dndxdnd/javascript',
     languageOptions: {

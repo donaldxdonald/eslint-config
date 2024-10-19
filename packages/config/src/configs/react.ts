@@ -7,7 +7,7 @@ import { OptionsWithOverrides } from '../types/options'
 const NextJsPackages = ['next']
 const ReactRefreshAllowConstantExportPackages = ['vite']
 
-export const react = async(options?: OptionsWithOverrides): Promise<Linter.FlatConfig[]> => {
+export const react = async(options?: OptionsWithOverrides): Promise<Linter.Config[]> => {
   const {
     overrides = {},
   } = options || {}

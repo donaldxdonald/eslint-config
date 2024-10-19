@@ -2,7 +2,7 @@ import { Linter } from 'eslint'
 import { GLOB_MARKDOWN } from '../globs'
 import { pluginMarkdown } from '../plugins'
 
-export const markdown = (): Linter.FlatConfig[] => {
+export const markdown = (): Linter.Config[] => {
   return [
     ...pluginMarkdown.configs.recommended,
     {

@@ -2,7 +2,7 @@ import { Linter } from 'eslint'
 import { GLOB_MARKDOWN, GLOB_SRC, GLOB_SRC_EXT } from '../globs'
 import { pluginImport } from '../plugins'
 
-export const imports = (): Linter.FlatConfig[] => {
+export const imports = (): Linter.Config[] => {
   return [
     pluginImport.flatConfigs.typescript,
     {

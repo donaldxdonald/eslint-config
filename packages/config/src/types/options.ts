@@ -1,7 +1,7 @@
 import { Linter } from 'eslint'
 
 export type OptionsWithOverrides = {
-  overrides?: Linter.FlatConfig['rules']
+  overrides?: Linter.Config['rules']
 }
 
 export type Options = {

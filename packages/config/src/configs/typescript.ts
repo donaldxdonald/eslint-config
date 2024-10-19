@@ -31,11 +31,11 @@ export const tsCore = () => {
         },
       ],
     },
-  }) as Linter.FlatConfig[]
+  }) as Linter.Config[]
 }
 
-export const typescript = (): Linter.FlatConfig[] => {
-  const configs: Linter.FlatConfig[] = [...tsCore()]
+export const typescript = (): Linter.Config[] => {
+  const configs: Linter.Config[] = [...tsCore()]
 
   configs.push(
     {
