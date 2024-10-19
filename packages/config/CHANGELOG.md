@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.4.0
+
+### Minor Changes
+
+- 0d2382a: update deps
+
 ## 2.3.1
 
 ### Patch Changes
