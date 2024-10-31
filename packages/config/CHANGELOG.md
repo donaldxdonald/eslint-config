@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.6.2
+
+### Patch Changes
+
+- 8b1ef72: add files to some configs
+
 ## 2.6.1
 
 ### Patch Changes
