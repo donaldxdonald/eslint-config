@@ -1,10 +1,12 @@
 import { Linter } from 'eslint'
 import { pluginNode } from '../plugins'
+import { GLOB_JS, GLOB_TS } from '../globs'
 
 export const node = (): Linter.Config[] => {
   return [
     {
       name: 'dndxdnd/node',
+      files: [GLOB_JS, GLOB_TS],
       plugins: {
         node: pluginNode,
       },

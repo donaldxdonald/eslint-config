@@ -11,8 +11,14 @@ export const style = (): Linter.Config[] => {
     GLOB_VUE,
   ]
 
+  const config = pluginStylistic.configs.customize({
+    semi: false,
+    quotes: 'single',
+    indent: 2,
+    commaDangle: 'always-multiline',
+  })
+
   return [
-    pluginStylistic.configs['recommended-flat'] as Linter.Config,
     {
       name: 'dndxdnd/style',
       files,
@@ -20,6 +26,7 @@ export const style = (): Linter.Config[] => {
         '@stylistic': pluginStylistic,
       },
       rules: {
+        ...config.rules,
         '@stylistic/semi': [
           'error',
           'never',
