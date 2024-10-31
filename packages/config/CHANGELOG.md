@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.6.1
+
+### Patch Changes
+
+- 996d69c: add files to stylistics config
+
 ## 2.6.0
 
 ### Minor Changes
