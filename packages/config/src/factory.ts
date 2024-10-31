@@ -3,6 +3,7 @@ import { isPackageExists } from 'local-pkg'
 import { comments, ignores, imports, javascript, jsonc, markdown, node, react, regexp, style, typescript, unicorn, vue, yml } from './configs'
 import { Options } from './types/options'
 import { angular } from './configs/angular'
+import { formatters } from './configs/formatters'
 
 export const presetBasic = [
   ...javascript(),
@@ -24,20 +25,12 @@ export const dndxdnd = async(extraConfigs: Linter.Config[] = [], options?: Optio
     react: enableReact = isPackageExists('react'),
     style: enableStyle = true,
     angular: enableAngular = false,
+    formatters: enableFormatters = true,
   } = options || {}
 
   const configs: Linter.Config[] = []
 
   configs.push(...presetBasic)
-
-  if (enableVue) {
-    configs.push(...await vue())
-  }
-
-  if (enableReact) {
-    const opts = enableReact === true ? {} : enableReact
-    configs.push(...await react(opts))
-  }
 
   if (enableTypescript) {
     configs.push(...typescript())
@@ -51,8 +44,23 @@ export const dndxdnd = async(extraConfigs: Linter.Config[] = [], options?: Optio
     configs.push(...style())
   }
 
+  if (enableFormatters) {
+    const opts = enableFormatters === true ? {} : enableFormatters
+    configs.push(...await formatters(opts))
+  }
+
+  if (enableVue) {
+    configs.push(...await vue())
+  }
+
+  if (enableReact) {
+    const opts = enableReact === true ? {} : enableReact
+    configs.push(...await react(opts))
+  }
+
   if (enableAngular) {
-    configs.push(...await angular())
+    const opts = enableAngular === true ? {} : enableAngular
+    configs.push(...await angular(opts))
   }
 
   configs.push(...extraConfigs)

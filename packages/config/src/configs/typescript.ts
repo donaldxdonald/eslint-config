@@ -1,18 +1,21 @@
-import { Linter } from "eslint"
-import { GLOB_JS, GLOB_TS, GLOB_TSX } from "../globs"
-import { tsEslint } from "../plugins"
+import { Linter } from 'eslint'
+import { GLOB_JS, GLOB_TS, GLOB_TSX } from '../globs'
+import { tsEslint } from '../plugins'
 
 export const tsCore = () => {
   return tsEslint.config({
     name: 'dndxdnd/typescript',
-    extends: [...tsEslint.configs.recommended],
+    extends: [
+      ...tsEslint.configs.recommended,
+      tsEslint.configs.eslintRecommended,
+    ],
     files: [GLOB_TS, GLOB_TSX],
     languageOptions: {
       parser: tsEslint.parser,
       parserOptions: {
         sourceType: 'module',
         project: true,
-        projectService: true
+        projectService: true,
       },
     },
     rules: {
@@ -20,12 +23,14 @@ export const tsCore = () => {
       '@typescript-eslint/member-ordering': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/prefer-for-of': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/naming-convention': 'off',
+      '@typescript-eslint/no-import-type-side-effects': 'error',
+      'no-restricted-imports': 'off',
+      '@typescript-eslint/no-restricted-imports': 'error',
       '@typescript-eslint/no-unused-vars': ['warn', { vars: 'all', args: 'none', ignoreRestSiblings: false }],
-      "@typescript-eslint/no-empty-interface": [
-        "warn",
+      '@typescript-eslint/no-empty-interface': [
+        'warn',
         {
           allowSingleExtends: true,
         },
