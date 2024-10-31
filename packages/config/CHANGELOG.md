@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.6.0
+
+### Minor Changes
+
+- 7ad53d2: add formatters config
+
 ## 2.5.0
 
 ### Minor Changes
