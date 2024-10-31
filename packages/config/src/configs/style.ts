@@ -1,12 +1,21 @@
 import { Linter } from 'eslint'
 import pluginStylistic from '@stylistic/eslint-plugin'
+import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX, GLOB_VUE } from '../globs'
 
 export const style = (): Linter.Config[] => {
+  const files = [
+    GLOB_JS,
+    GLOB_JSX,
+    GLOB_TS,
+    GLOB_TSX,
+    GLOB_VUE,
+  ]
+
   return [
-    // eslint-disable-next-line import-x/no-named-as-default-member
     pluginStylistic.configs['recommended-flat'] as Linter.Config,
     {
       name: 'dndxdnd/style',
+      files,
       plugins: {
         '@stylistic': pluginStylistic,
       },
