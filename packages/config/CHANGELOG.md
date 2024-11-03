@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.6.3
+
+### Patch Changes
+
+- 4167237: update default options for formatters config
+
 ## 2.6.2
 
 ### Patch Changes
