@@ -31,8 +31,8 @@ export const commonPrettierOptions: Options = {
 
 export const formatters = async(options: FormattersOptions = {}) => {
   const {
-    html,
-    css,
+    html = true,
+    css = true,
     scss,
     less,
   } = options

@@ -48,8 +48,8 @@ importers:
         specifier: ^1.15.0
         version: 1.15.0(eslint@9.13.0)(typescript@5.6.3)
       '@stylistic/eslint-plugin':
-        specifier: ^2.10.0
-        version: 2.10.0(eslint@9.13.0)(typescript@5.6.3)
+        specifier: ^2.10.1
+        version: 2.10.1(eslint@9.13.0)(typescript@5.6.3)
       angular-eslint:
         specifier: ^18
         version: 18.3.1(@angular-devkit/core@18.2.7(chokidar@3.6.0))(@angular-devkit/schematics@18.2.7(chokidar@3.6.0))(@typescript-eslint/utils@8.12.2(eslint@9.13.0)(typescript@5.6.3))(eslint@9.13.0)(typescript-eslint@8.12.2(eslint@9.13.0)(typescript@5.6.3))(typescript@5.6.3)
@@ -794,8 +794,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@stylistic/eslint-plugin@2.10.0':
-    resolution: {integrity: sha512-neWEgjp0qKxutbrKac5g23V5LX2c2Clyiz3zFxxybY8VSMfr+MmvwM204zg8YFbe9n2zcTwkpppCL2luwYcMhg==}
+  '@stylistic/eslint-plugin@2.10.1':
+    resolution: {integrity: sha512-U+4yzNXElTf9q0kEfnloI9XbOyD4cnEQCxjUI94q0+W++0GAEQvJ/slwEj9lwjDHfGADRSr+Tco/z0XJvmDfCQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -3325,7 +3325,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.24.0':
     optional: true
 
-  '@stylistic/eslint-plugin@2.10.0(eslint@9.13.0)(typescript@5.6.3)':
+  '@stylistic/eslint-plugin@2.10.1(eslint@9.13.0)(typescript@5.6.3)':
     dependencies:
       '@typescript-eslint/utils': 8.12.2(eslint@9.13.0)(typescript@5.6.3)
       eslint: 9.13.0

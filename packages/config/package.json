@@ -60,7 +60,7 @@
   "dependencies": {
     "@antfu/install-pkg": "^0.4.1",
     "@clack/prompts": "^0.7.0",
-    "@stylistic/eslint-plugin": "^2.10.0",
+    "@stylistic/eslint-plugin": "^2.10.1",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-format": "^0.1.2",
