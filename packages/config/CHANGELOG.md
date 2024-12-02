@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.8.1
+
+### Patch Changes
+
+- 808f520: cut 2.8.1 release
+
 ## 2.7.1
 
 ### Patch Changes
