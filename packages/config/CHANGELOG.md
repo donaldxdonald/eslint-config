@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.7.1
+
+### Patch Changes
+
+- c00a53d: fix angular-eslint peerDependency
+
 ## 2.8.0
 
 ### Minor Changes
