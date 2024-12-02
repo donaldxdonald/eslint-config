@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.8.0
+
+### Minor Changes
+
+- 6bf1bc1: update deps
+
 ## 2.7.0
 
 ### Minor Changes
