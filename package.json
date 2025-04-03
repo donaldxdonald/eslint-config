@@ -17,15 +17,15 @@
   "author": "Donald Mok<mzhlovefama@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.27.12",
+    "@changesets/cli": "^2.28.1",
     "@dndxdnd/eslint-config": "workspace:*",
-    "@eslint/config-inspector": "^1.0.0",
-    "@types/node": "^20.17.18",
+    "@eslint/config-inspector": "^1.0.2",
+    "@types/node": "^22.14.0",
     "concurrently": "^9.1.2",
-    "eslint": "^9.20.1",
-    "tsup": "^8.3.6",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "eslint": "^9.23.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

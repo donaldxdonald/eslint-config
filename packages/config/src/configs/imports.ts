@@ -1,10 +1,11 @@
 import { Linter } from 'eslint'
-import { GLOB_MARKDOWN, GLOB_SRC, GLOB_SRC_EXT } from '../globs'
-import { pluginImport } from '../plugins'
+import pluginImport from 'eslint-plugin-import-x'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
+import { GLOB_MARKDOWN, GLOB_SRC, GLOB_SRC_EXT, GLOB_TS, GLOB_TSX } from '../globs'
 
 export const imports = (): Linter.Config[] => {
   return [
-    pluginImport.flatConfigs.typescript,
+    pluginImport.flatConfigs.typescript as Linter.Config,
     {
       name: 'dndxdnd/import',
       plugins: {
@@ -34,6 +35,17 @@ export const imports = (): Linter.Config[] => {
             pathGroups: [{ group: 'internal', pattern: '{{@,~}/,#}**' }],
             pathGroupsExcludedImportTypes: ['type'],
           },
+        ],
+      },
+    },
+    {
+      files: [GLOB_TS, GLOB_TSX],
+      settings: {
+        'import/resolver-next': [
+          createTypeScriptImportResolver({
+            project: '**/tsconfig.json',
+            alwaysTryTypes: true,
+          }),
         ],
       },
     },
