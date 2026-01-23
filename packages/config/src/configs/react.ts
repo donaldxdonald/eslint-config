@@ -61,79 +61,100 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.Confi
       },
       rules: {
 
-        // recommended rules from @eslint-react/dom
+        // recommended rules from eslint-plugin-react-dom https://eslint-react.xyz/docs/rules/overview#dom-rules
         'react-dom/no-dangerously-set-innerhtml': 'warn',
         'react-dom/no-dangerously-set-innerhtml-with-children': 'error',
         'react-dom/no-find-dom-node': 'error',
-        'react-dom/no-missing-button-type': 'warn',
-        'react-dom/no-missing-iframe-sandbox': 'warn',
+        'react-dom/no-flush-sync': 'error',
+        'react-dom/no-hydrate': 'error',
         'react-dom/no-namespace': 'error',
+        'react-dom/no-render': 'error',
         'react-dom/no-render-return-value': 'error',
         'react-dom/no-script-url': 'warn',
         'react-dom/no-unsafe-iframe-sandbox': 'warn',
-        'react-dom/no-unsafe-target-blank': 'warn',
+        'react-dom/no-use-form-state': 'error',
+        'react-dom/no-void-elements-with-children': 'error',
 
-        // recommended rules react-hooks
-        'react-hooks/exhaustive-deps': 'warn',
+        // recommended rules eslint-plugin-react-hooks https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md
+        // Core hooks rules
         'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
 
-        // react refresh
+        // preconfigured rules from eslint-plugin-react-refresh https://github.com/ArnaudBarre/eslint-plugin-react-refresh/tree/main/src
         'react-refresh/only-export-components': [
-          'warn',
+          'error',
           {
             allowConstantExport: isAllowConstantExport,
             allowExportNames: [
               ...(isUsingNext
                 ? [
-                  'config',
+                  // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
+                  'dynamic',
+                  'dynamicParams',
+                  'revalidate',
+                  'fetchCache',
+                  'runtime',
+                  'preferredRegion',
+                  'maxDuration',
+                  // https://nextjs.org/docs/app/api-reference/functions/generate-static-params
                   'generateStaticParams',
+                  // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
                   'metadata',
                   'generateMetadata',
+                  // https://nextjs.org/docs/app/api-reference/functions/generate-viewport
                   'viewport',
                   'generateViewport',
+                  // https://nextjs.org/docs/app/api-reference/functions/generate-image-metadata
+                  'generateImageMetadata',
+                  // https://nextjs.org/docs/app/api-reference/functions/generate-sitemaps
+                  'generateSitemaps',
                 ]
                 : []),
             ],
           },
         ],
 
-        // recommended rules from @eslint-react
-        'react/ensure-forward-ref-using-ref': 'warn',
+        // recommended rules from eslint-plugin-react-x https://eslint-react.xyz/docs/rules/overview#core-rules
+        'react/jsx-key-before-spread': 'warn',
+        'react/jsx-no-comment-textnodes': 'warn',
+        'react/jsx-no-duplicate-props': 'warn',
+        'react/jsx-uses-react': 'warn',
+        'react/jsx-uses-vars': 'warn',
         'react/no-access-state-in-setstate': 'error',
         'react/no-array-index-key': 'warn',
         'react/no-children-count': 'warn',
         'react/no-children-for-each': 'warn',
         'react/no-children-map': 'warn',
         'react/no-children-only': 'warn',
-        'react/no-children-prop': 'warn',
         'react/no-children-to-array': 'warn',
         'react/no-clone-element': 'warn',
-        'react/no-comment-textnodes': 'warn',
         'react/no-component-will-mount': 'error',
         'react/no-component-will-receive-props': 'error',
         'react/no-component-will-update': 'error',
+        'react/no-context-provider': 'warn',
         'react/no-create-ref': 'error',
+        'react/no-default-props': 'error',
         'react/no-direct-mutation-state': 'error',
         'react/no-duplicate-key': 'error',
-        'react/no-implicit-key': 'error',
+        'react/no-forward-ref': 'warn',
+        'react/no-implicit-key': 'warn',
         'react/no-missing-key': 'error',
-        'react/no-nested-components': 'warn',
+        'react/no-nested-component-definitions': 'error',
+        'react/no-nested-lazy-component-declarations': 'error',
+        'react/no-prop-types': 'error',
         'react/no-redundant-should-component-update': 'error',
         'react/no-set-state-in-component-did-mount': 'warn',
         'react/no-set-state-in-component-did-update': 'warn',
         'react/no-set-state-in-component-will-update': 'warn',
         'react/no-string-refs': 'error',
+        'react/no-unnecessary-use-prefix': 'warn',
         'react/no-unsafe-component-will-mount': 'warn',
         'react/no-unsafe-component-will-receive-props': 'warn',
         'react/no-unsafe-component-will-update': 'warn',
-        'react/no-unstable-context-value': 'error',
-        'react/no-unstable-default-props': 'error',
-        'react/no-unused-class-component-members': 'warn',
-        'react/no-unused-state': 'warn',
-        'react/no-useless-fragment': 'warn',
-        'react/prefer-destructuring-assignment': 'warn',
-        'react/prefer-shorthand-boolean': 'warn',
-        'react/prefer-shorthand-fragment': 'warn',
+        'react/no-use-context': 'warn',
+        'react/no-useless-forward-ref': 'warn',
+        'react/prefer-use-state-lazy-initialization': 'warn',
+        'react/prefer-namespace-import': 'error',
 
         ...overrides,
       },
