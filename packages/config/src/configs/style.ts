@@ -73,7 +73,8 @@ export const style = (): Linter.Config[] => {
             },
           },
         ],
-        '@stylistic/type-annotation-spacing': ['error', { before: false, after: true, overrides: { arrow: { before: true, after: true } } }],
+        '@stylistic/type-annotation-spacing': ['error', { before: false, after: true }],
+        '@stylistic/arrow-spacing': ['error', { before: true, after: true }],
       },
     },
   ]
