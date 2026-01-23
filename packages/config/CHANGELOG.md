@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.11.1
+
+### Patch Changes
+
+- 7c16d27: update override react rules
+
 ## 2.11.0
 
 ### Minor Changes
