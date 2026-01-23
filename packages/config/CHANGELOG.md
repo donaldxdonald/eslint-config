@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 2.11.2
+
+### Patch Changes
+
+- 303e50f: fix config
+
 ## 2.11.1
 
 ### Patch Changes
