@@ -12,6 +12,6 @@ export { default as pluginJsonc } from 'eslint-plugin-jsonc'
 export { default as parserJsonc } from 'jsonc-eslint-parser'
 
 export { default as pluginYml } from 'eslint-plugin-yml'
-export { default as parserYaml } from 'yaml-eslint-parser'
+export { parseYAML } from 'yaml-eslint-parser'
 
 export { default as pluginUnicorn } from 'eslint-plugin-unicorn'

@@ -5,7 +5,7 @@ import { Options } from './types/options'
 import { angular } from './configs/angular'
 import { formatters } from './configs/formatters'
 
-export const presetBasic = [
+export const presetBasic: Linter.Config[] = [
   ...javascript(),
   ...yml(),
   ...imports(),

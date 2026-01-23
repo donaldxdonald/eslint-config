@@ -1,6 +1,6 @@
 import { Linter } from 'eslint'
 import { GLOB_YAML } from '../globs'
-import { parserYaml, pluginYml } from '../plugins'
+import { parseYAML, pluginYml } from '../plugins'
 
 export const yml = (): Linter.Config[] => {
   return [
@@ -9,7 +9,7 @@ export const yml = (): Linter.Config[] => {
       name: 'dndxdnd/yml',
       files: [GLOB_YAML],
       languageOptions: {
-        parser: parserYaml,
+        parser: parseYAML,
       },
       plugins: {
         yml: pluginYml as any,

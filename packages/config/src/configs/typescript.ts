@@ -14,7 +14,6 @@ export const tsCore = () => {
       parser: tsEslint.parser,
       parserOptions: {
         sourceType: 'module',
-        project: true,
         projectService: true,
       },
     },

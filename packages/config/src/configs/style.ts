@@ -40,7 +40,7 @@ export const style = (): Linter.Config[] => {
           before: false,
           after: true,
         }],
-        '@stylistic/func-call-spacing': 'error',
+        '@stylistic/function-call-spacing': 'error',
         '@stylistic/indent': ['error', 2],
         '@stylistic/key-spacing': ['error', {
           beforeColon: false,

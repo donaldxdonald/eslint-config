@@ -25,9 +25,7 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.Confi
     pluginTs,
   ] = await Promise.all([
     interopDefault(import('@eslint-react/eslint-plugin')),
-    // @ts-expect-error no types
     interopDefault(import('eslint-plugin-react-hooks')),
-    // @ts-expect-error no types
     interopDefault(import('eslint-plugin-react-refresh')),
     interopDefault(import('typescript-eslint')),
   ] as const)
@@ -35,7 +33,7 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.Confi
   const isAllowConstantExport = ReactRefreshAllowConstantExportPackages.some(i => isPackageExists(i))
   const isUsingNext = NextJsPackages.some(i => isPackageExists(i))
 
-  const plugins = pluginReact.configs.all.plugins
+  const plugins = (pluginReact.configs.all as any).plugins
 
   return [
     {
@@ -43,7 +41,7 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.Confi
       plugins: {
         'react': plugins['@eslint-react'] as any,
         'react-dom': plugins['@eslint-react/dom'] as any,
-        'react-hooks': pluginReactHooks,
+        'react-hooks': pluginReactHooks as any,
         'react-hooks-extra': plugins['@eslint-react/hooks-extra'] as any,
         'react-naming-convention': plugins['@eslint-react/naming-convention'] as any,
         'react-refresh': pluginReactRefresh,
@@ -64,7 +62,6 @@ export const react = async(options?: OptionsWithOverrides): Promise<Linter.Confi
       rules: {
 
         // recommended rules from @eslint-react/dom
-        'react-dom/no-children-in-void-dom-elements': 'warn',
         'react-dom/no-dangerously-set-innerhtml': 'warn',
         'react-dom/no-dangerously-set-innerhtml-with-children': 'error',
         'react-dom/no-find-dom-node': 'error',

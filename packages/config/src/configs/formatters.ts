@@ -29,7 +29,7 @@ export const commonPrettierOptions: Options = {
   printWidth: 120,
 }
 
-export const formatters = async(options: FormattersOptions = {}) => {
+export const formatters = async(options: FormattersOptions = {}): Promise<Linter.Config[]> => {
   const {
     html = true,
     css = true,
