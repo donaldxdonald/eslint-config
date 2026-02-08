@@ -1,5 +1,11 @@
 # @dndxdnd/eslint-config
 
+## 3.0.0-next.0
+
+### Major Changes
+
+- 721c6e6: add ESLint v10 support
+
 ## 2.11.2
 
 ### Patch Changes
