@@ -1,6 +1,6 @@
 {
   "name": "@dndxdnd/eslint-config",
-  "version": "2.11.2",
+  "version": "3.0.0-next.0",
   "description": "Eslint Config",
   "type": "module",
   "scripts": {
